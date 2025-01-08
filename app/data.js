@@ -1,4 +1,4 @@
-const interviewerQuestions = [
+let interviewerQuestions = [
     //General developer
     {
         questionText: "What is Dependency Injection?"

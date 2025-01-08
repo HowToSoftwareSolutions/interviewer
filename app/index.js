@@ -15,7 +15,28 @@ function toggleDisplay(element) {
     style.display = style.display == displayStyles[0] ? displayStyles[1] : displayStyles[0];
 }
 
+/**
+ * sort an array in-place
+ * @param {Array} arrItems
+ */
+function randomSort(arrItems) {
+    let arrNew = [];
+
+    let sourceCount;
+    while (sourceCount = arrItems.length) {
+        console.log(sourceCount);
+        const rand = Math.random();
+        arrDeleted = arrItems.splice(Math.floor(rand * sourceCount), 1);
+        arrNew = arrNew.concat(arrDeleted);
+    }
+
+    return arrNew;
+}
+
 function loadData() {
+    interviewerQuestions = randomSort(interviewerQuestions);
+    console.log(interviewerQuestions);
+
     interviewerQuestions.forEach((question) => {
         const answers = question.answers;
 
