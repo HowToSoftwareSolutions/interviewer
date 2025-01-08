@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Ensure that a parameter is passed
+if [ -z "$1" ]; then
+    echo "Usage: comm <string to pass>"
+    exit 1
+fi
+
+# Execute the commands
+git stage -A
+git commit -m "$1"
+git push
