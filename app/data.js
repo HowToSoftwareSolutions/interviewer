@@ -11,7 +11,7 @@ const interviewerQuestions = [
 
     //React
     , {
-        questionText: "What is React? (6 answers)"
+        questionText: "What is React?"
         , answers: [
             "JavaScript framework"
             , "Build dynamic user interfaces in web applications"
