@@ -8,6 +8,7 @@ fi
 
 # Combine all parameters into a single string
 PARAM="$*"
+echo $PARAM
 
 # Execute the commands
 git stage -A
