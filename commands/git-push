@@ -1,12 +1,15 @@
 #!/bin/bash
 
 # Ensure that a parameter is passed
-if [ -z "$1" ]; then
+if [ $# -eq 0 ]; then
     echo "Usage: comm <string to pass>"
     exit 1
 fi
 
+# Combine all parameters into a single string
+PARAM="$*"
+
 # Execute the commands
 git stage -A
-git commit -m "$1"
+git commit -m "$PARAM"
 git push
