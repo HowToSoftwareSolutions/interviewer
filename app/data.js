@@ -3,9 +3,11 @@ let interviewerQuestions = [
     {
         questionText: "Why did you leave your last job?"
         , answers: [
-            "The project came to an end."
-            , "I was having some issues going on in my personal life I wanted to work on."
-            , "I left on good terms - they will give me a very good recommendation."
+            "The Marathon project came to an end. I would be idle ('on the bench') for a while."
+            , "I was having some issues going on in my personal life I wanted to take some time to work on."
+            , "I left Marathon on good terms - they will give me a very good recommendation."
+            , "Things went well in the month and a half I took off, and I am ready to get back to work."
+            , "Marathon doesn't have a project for me at the moment, so I am looking for a new git to continue my career."
         ]
     }
 
@@ -24,12 +26,12 @@ let interviewerQuestions = [
     , {
         questionText: "What factors will you consider to take this job?"
         , answers: [
-            "Salary and benefits - it's more than I have been making."
+            "Salary and Benefits"
+            , "The nature of the job. I like doing heads-down development."
+            , "The People: Meeting the people I will be working with."
+            , "Work Atmosphere: I like working in a friendly, relaxed environment."
             , "The location - the environment I will be living in."
-            , "The nature of the job."
-            , "Meeting the people I will be working with."
-            , "What kind of assistance will they be providing with the relocation."
-            , "Atmosphere - I like working in a friendly, relaxed environment."
+            , "Relocation Assistance: What will they provide?"
         ]
     }
 
@@ -37,9 +39,9 @@ let interviewerQuestions = [
         questionText: "Do you have any questions for me? (recruiter)"
         , answers: [
             "Why do they require on-site?"
-            , "What kind of assistance will they be providing with the relocation?"
+            , "Relocation Assistance: What will they provide?"
             , "What is the benefits package like?"
-            , "How big is the company."
+            , "How big is the company?"
             , "What are the facilities like?"
             , "What is the location environment like? (city, rural, in-between)"
             , "Anything you can tell me about the nature of the job."
@@ -49,24 +51,121 @@ let interviewerQuestions = [
     }
 
     /*** Specific Job ***/
-    , {
-        questionText: "Questions for Sr. Developer - web/.net"
-        , answers: [
-            "web.net?"
-            , "Blazer?"
-        ]
-    }
 
     /*** General Developer ***/
+
     , {questionText: "What is Dependency Injection?"
         , answers: [
             "Promotes loose coupling"
             , "Object receives its dependencies from an external source rather than creating them"
             , "Testability, code reusability, and maintainability"
+            , "Also called Inversion of Control"
         ]
     }
 
+    , {questionText: "What are the primary types of Dependency Injection?"
+        , answers: [
+            "Constructor Injection (most common)"
+            , "Setter Injection"
+            , "Field Injection"
+            , "Interface Injection (not common)"
+        ]
+    }
+
+    , {questionText: "What are Dependency Injection frameworks?"
+        , answers: [
+            "Tools or libraries that automate the process of Dependency Injection"
+            , "Provides lifecycle management: creation, destruction, and scope"
+            , "For .NET Core the default for C# is Microsoft.Extensions.DependencyInjection "
+        ]
+    }
+
+    , {questionText: "What is SOLID?"
+        , answers: [
+            "5 principles for good object-oriented code."
+            , "Clean"
+            , "Testable"
+            , "Maintainable"
+            , "Scalable"
+        ]
+    }
+
+    , {questionText: "What does the SOLID acronym stand for?"
+        , answers: [
+            "Single Responsibility"
+            , "Open for Extension / Closed for Modification"
+            , "Liskov Substitution Principle"
+            , "Interface Segregation Principle"
+            , "Dependency Inversion Principle"
+        ]
+    }
+
+    , {questionText: "What are Design Patterns?"
+        , answers: []
+    }
+
+    , {questionText: "What is MVVM?"
+        , answers: []
+    }
+
+    , {questionText: "What techniques exist for Application Performance Monitoring?"
+        , answers: []
+    }
+
+    , {questionText: "What techniques exist for Application Performance Optimization??"
+        , answers: []
+    }
+
+    , {questionText: "What techniques exist for Application Troubleshooting?"
+        , answers: []
+    }
+
+    , {questionText: "What is Scalability?"
+        , answers: []
+    }
+
+    , {questionText: "What techniques exist for High Availability?"
+        , answers: []
+    }
+
+    , {questionText: "What is Test-Driven Development?"
+        , answers: []
+    }
+
+    , {questionText: "What is Behavior-Driven Development?"
+        , answers: []
+    }
+
+    /*** Testing Tools */
+
+    , {questionText: "What is Gherkin?"
+        , answers: []
+    }
+
+    , {questionText: "What is SpecFlow?"
+        , answers: []
+    }
+
+    , {questionText: "What is Cucumber?"
+        , answers: []
+    }
+
+    , {questionText: "What is NUnit?"
+        , answers: []
+    }
+
+    , {questionText: "What is xUnit?"
+        , answers: []
+    }
+
+    /*** .NET MAUI ***/
+
+    , {questionText: "What is .NET MAUI?"
+        , answers: []
+    }
+
     /*** React ***/
+
     , {
         questionText: "What is React?"
         , answers: [
@@ -126,6 +225,13 @@ let interviewerQuestions = [
         ]
     }
 
+    /*** NoSQL ***/
+
+    , {
+        questionText: "What is NoSQL?"
+        , answers: []
+    }
+
     /*** Data Warehouse ***/
 
     , {
@@ -165,5 +271,245 @@ let interviewerQuestions = [
             , "Uses C# or VB.NET"
             , "Has cross-platform support"
         ]
+    }
+
+    /*** RESTful API ***/
+
+    , {
+        questionText: "What is a RESTful API?"
+        , answers: []
+    }
+
+    /*** MicroServices Architecture ***/
+
+    , {
+        questionText: "What is a MicroServices Architecture?"
+        , answers: []
+    }
+
+    /*** .NET ***/
+
+    , {
+        questionText: "What is .NET?"
+        , answers: []
+    }
+
+    /*** PostgreSQL ***/
+
+    , {
+        questionText: "What is PostgreSQL?"
+        , answers: []
+    }
+
+    /*** MongoDB ***/
+
+    , {
+        questionText: "What is MongoDB?"
+        , answers: []
+    }
+
+    /*** Docker ***/
+
+    , {
+        questionText: "What is Docker?"
+        , answers: []
+    }
+
+    /*** Kubernetes ***/
+
+    , {
+        questionText: "What is Kubernetes?"
+        , answers: []
+    }
+
+    /*** CI/CD ***/
+
+    , {
+        questionText: "What is CI/CD?"
+        , answers: []
+    }
+
+    /*** Agile ***/
+
+    , {
+        questionText: "What is Agile?"
+        , answers: []
+    }
+
+    /*** Git ***/
+
+    , {
+        questionText: "What is Git?"
+        , answers: []
+    }
+
+    /*** JavaScript ***/
+
+    , {
+        questionText: "What is JavaScript?"
+        , answers: []
+    }
+
+    /*** Node.js ***/
+
+    , {
+        questionText: "What is Node.js?"
+        , answers: []
+    }
+
+    /*** Angular ***/
+
+    , {
+        questionText: "What is Angular?"
+        , answers: []
+    }
+
+    /*** Vue ***/
+
+    , {
+        questionText: "What is Vue?"
+        , answers: []
+    }
+
+    /*** Python ***/
+
+    , {
+        questionText: "What is Python?"
+        , answers: []
+    }
+
+    /*** AWS ***/
+
+    , {
+        questionText: "What is AWS?"
+        , answers: []
+    }
+
+    /*** C# ***/
+
+    , {
+        questionText: "What is C#?"
+        , answers: []
+    }
+
+    /*** MySQL ***/
+
+    , {
+        questionText: "What is MySQL?"
+        , answers: []
+    }
+
+    /*** CSS ***/
+
+    , {
+        questionText: "What is CSS?"
+        , answers: []
+    }
+
+    /*** JQuery ***/
+
+    , {
+        questionText: "What is JQuery?"
+        , answers: []
+    }
+
+    /*** Web Services ***/
+
+    , {
+        questionText: "What are Web Services?"
+        , answers: []
+    }
+
+    /*** DevOps ***/
+
+    , {
+        questionText: "What are DevOps?"
+        , answers: []
+    }
+    , {
+        questionText: "Name some Code Quality Tools?"
+        , answers: []
+    }
+
+    /*** Website Security ***/
+
+    , {
+        questionText: "What are some Website Security issues?"
+        , answers: []
+    }
+
+    /*** Progress Technology ***/
+
+    , {
+        questionText: "What is Progress Technology?"
+        , answers: []
+    }
+
+    /*** Sitefinity ***/
+
+    , {
+        questionText: "What is Sitefinity?"
+        , answers: []
+    }
+
+    /*** DevCraft Complete ***/
+
+    , {
+        questionText: "What is DevCraft Complete?"
+        , answers: []
+    }
+
+    /*** Kendo Blazor ***/
+
+    , {
+        questionText: "What is Kendo Blazor?"
+        , answers: []
+    }
+
+    /*** Google Cloud ***/
+
+    , {
+        questionText: "What is Google Cloud?"
+        , answers: []
+    }
+
+    /*** Azure Cloud ***/
+
+    , {
+        questionText: "What is Azure Cloud?"
+        , answers: []
+    }
+
+    , {
+        questionText: "What are Azure Cloud Services?"
+        , answers: []
+    }
+
+    /*** Business Analysis ***/
+
+    , {
+        questionText: "What does Business Analysis refer to in a software development context?"
+        , answers: []
+    }
+
+    /*** SDLC ***/
+
+    , {
+        questionText: "What is SDLC?"
+        , answers: []
+    }
+
+    /*** Visual Studio ***/
+
+    , {
+        questionText: "What is Visual Studio?"
+        , answers: []
+    }
+
+    /*** Debugging ***/
+
+    , {
+        questionText: "What is Debugging?"
+        , answers: []
     }
 ];

@@ -24,7 +24,6 @@ function randomSort(arrItems) {
 
     let sourceCount;
     while (sourceCount = arrItems.length) {
-        console.log(sourceCount);
         const rand = Math.random();
         arrDeleted = arrItems.splice(Math.floor(rand * sourceCount), 1);
         arrNew = arrNew.concat(arrDeleted);
@@ -35,7 +34,6 @@ function randomSort(arrItems) {
 
 function loadData() {
     interviewerQuestions = randomSort(interviewerQuestions);
-    console.log(interviewerQuestions);
 
     interviewerQuestions.forEach((question) => {
         const answers = question.answers;
